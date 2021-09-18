@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #21C08B;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#AB88FF), color-stop(#8F57FD), to(#21C08B));
+  background: linear-gradient(to top, #AB88FF, #8F57FD, #21C08B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 20px 50px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+header .header__figure {
+  width: 200px;
+  height: 60px;
+}
+header .header__figure .header__figure-img {
+  width: 100%;
+}
+header .nav-bar {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  cursor: pointer;
+}
+header .nav-bar .nav-bar__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .nav-bar .nav-bar__profile .nav-bar__profile-img {
+  margin-right: 10px;
+  font-size: 35px;
+}
+header .nav-bar .nav-bar__list {
+  list-style: none;
+  text-align: end;
+  display: none;
+}
+header .nav-bar .nav-bar__list .nav-bar__list-item {
+  margin-top: 10px;
+}
+header .nav-bar .nav-bar__list .nav-bar__list-item .list-item__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: normal;
+}
+header .nav-bar .nav-bar__list .nav-bar__list-item .list-item__link:hover {
+  text-decoration: underline;
+}
+header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
+  display: block;
+}
