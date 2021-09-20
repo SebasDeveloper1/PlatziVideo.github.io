@@ -66,3 +66,42 @@ header .nav-bar .nav-bar__list .nav-bar__list-item .list-item__link:hover {
 header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
   display: block;
 }
+
+.search {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.search .search__title {
+  font-weight: 300;
+  font-size: 25px;
+  color: #ffffff;
+}
+.search .search__input {
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  outline: none;
+  background-color: #AB88FF;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+}
+.search .search__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.search .search__input::-moz-placeholder {
+  color: #ffffff;
+}
+.search .search__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.search .search__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.search .search__input::placeholder {
+  color: #ffffff;
+}
