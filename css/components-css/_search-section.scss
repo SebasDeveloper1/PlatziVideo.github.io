@@ -3,6 +3,7 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 50px;
     .search__title{
         font-weight: 300;
         font-size: 25px;
@@ -14,8 +15,8 @@
         margin-top: 20px;
         padding: 20px;
         outline: none;
-        background-color: $color-variation;
-        border-radius: 20px;
+        background-color: rgba(255,255,255, 0.1);
+        border-radius: 50px;
         border: 2px solid $color-light;
         font-size: 16px;
         color: $color-light;

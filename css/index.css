@@ -27,7 +27,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 20px 50px 0;
+  padding: 20px 40px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -43,7 +43,7 @@ header .header__figure .header__figure-img {
 header .nav-bar {
   position: absolute;
   right: 0;
-  margin-right: 50px;
+  margin-right: 40px;
   cursor: pointer;
 }
 header .nav-bar .nav-bar__profile {

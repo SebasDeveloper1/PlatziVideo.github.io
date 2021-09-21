@@ -10,4 +10,33 @@ html(lang="en")
         header 
             figure.header__figure
                 img.header__figure-img(src="../images/logo-platzi-video.png", alt="Logo Platzi Video")
-                
+        main 
+            section.login-container 
+                h2.login-container__title
+                form(action="").login-form
+                    input(type="text").login-form__input.login-form__input--email
+                    input(type="password").login-form__input.login-form__input--password
+                    a(href="./home.html").login-form__button.login Iniciar Sesión
+                div.login-container-remember
+                    label.login-container-remember__checkbox
+                        input(type="checkbox" value="checkbox") 
+                        | Recuérdame
+                    p.login-container-remember__text Olvidé mi contraseña
+                section.login-container-social-media
+                    div.login-social-media
+                        img(src="../images/googlemas.png" alt="logo Google+").login-social-media__icon
+                        p.login-social-media__text Inicia sesión con Google
+                    div.login-social-media
+                        img(src="../images/twitter.png" alt="logo Google+").login-social-media__icon
+                        p.login-social-media__text Inicia sesión con Twitter
+                p.login-account-text No tienes cuenta, 
+                    a(href="#").login-account-text__link Regístrate 
+        footer.footer 
+            nav.footer-nav-bar 
+                ul.nav-bar-list 
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Términos de uso
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Declaración de privacidad 
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Centro de ayuda
