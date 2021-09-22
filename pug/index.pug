@@ -4,39 +4,39 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Platzi Video
+        title Platzi Video/Login
         link(rel="stylesheet", href="../css/index.css")
     body
         header 
             figure.header__figure
                 img.header__figure-img(src="../images/logo-platzi-video.png", alt="Logo Platzi Video")
-        main 
+        main.login
             section.login-container 
-                h2.login-container__title
+                h2.login-container__title Login
                 form(action="").login-form
-                    input(type="text").login-form__input.login-form__input--email
-                    input(type="password").login-form__input.login-form__input--password
-                    a(href="./home.html").login-form__button.login Iniciar Sesión
+                    input(type="text" placeholder="Email").login-form__input.login-form__input--email
+                    input(type="password" placeholder="Password").login-form__input.login-form__input--password
+                    a(href="./home.html").login-form__button-login Login
                 div.login-container-remember
                     label.login-container-remember__checkbox
                         input(type="checkbox" value="checkbox") 
-                        | Recuérdame
-                    p.login-container-remember__text Olvidé mi contraseña
+                        |  Remember me
+                    p.login-container-remember__text I forgot my password
                 section.login-container-social-media
                     div.login-social-media
                         img(src="../images/googlemas.png" alt="logo Google+").login-social-media__icon
-                        p.login-social-media__text Inicia sesión con Google
+                        p.login-social-media__text Log in with Google
                     div.login-social-media
                         img(src="../images/twitter.png" alt="logo Google+").login-social-media__icon
-                        p.login-social-media__text Inicia sesión con Twitter
-                p.login-account-text No tienes cuenta, 
-                    a(href="#").login-account-text__link Regístrate 
+                        p.login-social-media__text Log in with Twitter
+                p.login-account-text You do not have any account, 
+                    a(href="./register.html").login-account-text__link Register 
         footer.footer 
             nav.footer-nav-bar 
                 ul.nav-bar-list 
                     il.nav-bar-list__item 
-                        a.nav-bar-list__item-link(href="#") Términos de uso
+                        a.nav-bar-list__item-link(href="#") Terms of use
                     il.nav-bar-list__item 
-                        a.nav-bar-list__item-link(href="#") Declaración de privacidad 
+                        a.nav-bar-list__item-link(href="#") Privacy statement
                     il.nav-bar-list__item 
-                        a.nav-bar-list__item-link(href="#") Centro de ayuda
+                        a.nav-bar-list__item-link(href="#") Help Center

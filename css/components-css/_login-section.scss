@@ -1,0 +1,115 @@
+.login-container {
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 60px 60px 40px;
+    border: 2px solid $color-light;
+    border-radius: 40px;
+    color: $color-light;
+    -webkit-box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.login-container__title {
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.login-form__input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    color: $color-light;
+    font-size: 16px;
+    font-family: $font-one;
+}
+
+.login-form__input::placeholder {
+    padding-left: 10px;
+    color: $color-light;
+}
+
+.login-form__button-login {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $color-light;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-container-remember {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.login-container-remember__text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-container-social-media {
+    margin: 70px 0 90px;
+}
+
+.login-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login-social-media__icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.login-social-media__text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-account-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-account-text__link {
+    color: $color-light;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.login-account-text__link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        width: 100%;
+        background-color:transparent;
+        border: none;
+        padding: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none rgba(0, 0, 0, 0.5);
+    }
+}

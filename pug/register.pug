@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Platzi Video/Register
+        link(rel="stylesheet", href="../css/register.css")
+    body
+        header 
+            figure.header__figure
+                img.header__figure-img(src="../images/logo-platzi-video.png", alt="Logo Platzi Video")
+        main.register
+            section.register-container 
+                h2.register-container__title Register
+                form(action="").register-form
+                    input(type="text" placeholder="Name").register-form__input.register-form__input--email
+                    input(type="text" placeholder="Email").register-form__input.register-form__input--email
+                    input(type="password" placeholder="Password").register-form__input.register-form__input--password
+                    a(href="./home.html").register-form__button-register Register
+                div.register-login
+                    a(href="./index.html").register-login-text__link Log in 
+        footer.footer 
+            nav.footer-nav-bar 
+                ul.nav-bar-list 
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Terms of use
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Privacy statement
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Help Center

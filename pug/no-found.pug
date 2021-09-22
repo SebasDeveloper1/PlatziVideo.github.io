@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Platzi Video/404
+        link(rel="stylesheet", href="../css/no-found.css")
+    body
+        header 
+            figure.header__figure
+                img.header__figure-img(src="../images/logo-platzi-video.png", alt="Logo Platzi Video")
+        main.error
+            section.error-info 
+                div.error-info__text
+                    h2.error-info__text-title Hmmm!
+                    p.error-info__text-paragraph ¡Sorry, we couldn't find what you were looking for!
+                    a(href="./index.html").error-info__text-button To return
+                div.error-info-image
+                    figure.info-image__container 
+                        img(src="../images/404.svg", alt="Imagen error 404").info-image__container-img
+
+        footer.footer 
+            nav.footer-nav-bar 
+                ul.nav-bar-list 
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Terms of use
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Privacy statement
+                    il.nav-bar-list__item 
+                        a.nav-bar-list__item-link(href="#") Help Center
