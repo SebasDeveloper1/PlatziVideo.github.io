@@ -6,31 +6,6 @@
 }
 
 header {
-  background-color: #21C08B;
-  font-family: "Lato", sans-serif;
-}
-
-.login {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8F57FD), to(#21C08B));
-  background: linear-gradient(to top, #8F57FD, #21C08B);
-  font-family: "Lato", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 30px;
-}
-
-header {
   width: 100%;
   height: 100px;
   display: -webkit-box;
@@ -88,8 +63,34 @@ header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
   display: block;
 }
 
-.login-container {
-  width: 430px;
+header {
+  background-color: #21C08B;
+  font-family: "Lato", sans-serif;
+}
+
+.register {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8F57FD), to(#21C08B));
+  background: linear-gradient(to top, #8F57FD, #21C08B);
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+}
+
+.register-container {
+  width: 37%;
+  min-width: 310px;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 60px 60px 40px;
   border: 2px solid #ffffff;
@@ -99,13 +100,13 @@ header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
   box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-.login-container__title {
+.register-container__title {
   display: inline-block;
   font-weight: normal;
   margin-bottom: 80px;
 }
 
-.login-form {
+.register-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,10 +121,9 @@ header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.login-form__input {
+.register-form__input {
   width: 100%;
   height: 50px;
   outline: none;
@@ -136,32 +136,32 @@ header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
   font-family: "Lato", sans-serif;
 }
 
-.login-form__input::-webkit-input-placeholder {
+.register-form__input::-webkit-input-placeholder {
   padding-left: 10px;
   color: #ffffff;
 }
 
-.login-form__input::-moz-placeholder {
+.register-form__input::-moz-placeholder {
   padding-left: 10px;
   color: #ffffff;
 }
 
-.login-form__input:-ms-input-placeholder {
+.register-form__input:-ms-input-placeholder {
   padding-left: 10px;
   color: #ffffff;
 }
 
-.login-form__input::-ms-input-placeholder {
+.register-form__input::-ms-input-placeholder {
   padding-left: 10px;
   color: #ffffff;
 }
 
-.login-form__input::placeholder {
+.register-form__input::placeholder {
   padding-left: 10px;
   color: #ffffff;
 }
 
-.login-form__button-login {
+.register-form__button-register {
   width: 100%;
   text-align: center;
   padding: 10px 0;
@@ -172,73 +172,31 @@ header .nav-bar:hover .nav-bar__list, header .nav-bar__list {
   cursor: pointer;
 }
 
-.login-container-remember {
+.register-login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 20px;
-}
-
-.login-container-remember__text:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.login-container-social-media {
-  margin: 70px 0 90px;
-}
-
-.login-social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin: 40px auto;
 }
 
-.login-social-media__icon {
-  width: 30px;
-  height: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 10px;
-}
-
-.login-social-media__text:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.login-account-text {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.login-account-text__link {
+.register-login-text__link {
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 5px;
 }
 
-.login-account-text__link:hover {
+.register-login-text__link:hover {
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
-  .login-container {
+  .register-container {
     width: 100%;
     background-color: transparent;
     border: none;
